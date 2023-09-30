@@ -17,12 +17,9 @@ df_hog %>%
   select (id_hogar, entidad,  desc_ent, munici, desc_mun, locali, desc_loc, code_upm,estrato, est_var, ponde_hh) %>%
   head(5)
 
+## Obtener el de hogar. 
 
-
-## Obtener el de de hogar 
-
-df_ind <- df_ind %>% mutate( 
-  id_hog = substring(id_pers, 1, 20 ) ) #%>% select(id_hog) 
+df_ind <- df_ind %>% mutate( id_hog = substring(id_pers, 1, 20 ) ) #%>% select(id_hog) 
 
 df_ind$id_pers
 
